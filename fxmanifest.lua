@@ -21,8 +21,8 @@ shared_script {
 }
 
 dependencies {
-    'es_extended',
-	'ox_lib',
-    'oxmysql',
-    'ox_inventory'
+  'es_extended',
+  'ox_lib',
+  'oxmysql',
+  'ox_inventory'
 }
