@@ -2,6 +2,8 @@ Config= {}
 
 Config.Locale = 'en'
 
+Config.Delay = 5000
+
 Config.EX = {
     -666581633,
     -1980225301,

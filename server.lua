@@ -20,6 +20,8 @@ AddEventHandler('sc:getfire', function()
             type = 'error'
         })
     else
+        TriggerClientEvent('giveex', -1)
+        Citizen.Wait(5000)
         xPlayer.addInventoryItem(item, count)
         playerItems[source][item] = true
 
@@ -42,7 +44,7 @@ AddEventHandler('sc:change', function()
 
     if xPlayer.getInventoryItem(item).count > 0 then
         xPlayer.removeInventoryItem(item, xPlayer.getInventoryItem(item).count)
-        TriggerClientEvent('startProgressCircleEvent', -1)
+        TriggerClientEvent('getnewex', -1)
         Citizen.Wait(5000)
         xPlayer.addInventoryItem(item, count)
         TriggerClientEvent('ox_lib:notify', _source, {
