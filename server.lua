@@ -20,11 +20,10 @@ AddEventHandler('sc:getfire', function()
             type = 'error'
         })
     else
-        TriggerClientEvent('giveex', -1)
-        Citizen.Wait(5000)
         xPlayer.addInventoryItem(item, count)
         playerItems[source][item] = true
 
+        print("Debug: Triggering sc:getfire event. Source:", source)
         TriggerClientEvent('ox_lib:notify', source, {
             title = Translation[Config.Locale]['success1'],
             description = Translation[Config.Locale]['success2'],
@@ -44,7 +43,7 @@ AddEventHandler('sc:change', function()
 
     if xPlayer.getInventoryItem(item).count > 0 then
         xPlayer.removeInventoryItem(item, xPlayer.getInventoryItem(item).count)
-        TriggerClientEvent('getnewex', -1)
+        TriggerClientEvent('getnewex', source)
         Citizen.Wait(5000)
         xPlayer.addInventoryItem(item, count)
         TriggerClientEvent('ox_lib:notify', _source, {

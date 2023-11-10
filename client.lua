@@ -23,7 +23,6 @@ lib.registerContext({
     options = {
       {
         title = Translation[Config.Locale]['menu_1'],
-        description = '',
         icon = 'fire-extinguisher',
         onSelect = function()
             TriggerServerEvent('sc:getfire')
@@ -31,7 +30,6 @@ lib.registerContext({
       },
       {
         title = Translation[Config.Locale]['menu_2'],
-        description = '',
         icon = 'fire-extinguisher',
         onSelect = function()
             TriggerServerEvent('sc:change')
@@ -45,24 +43,6 @@ AddEventHandler('getnewex', function()
     lib.progressBar({
         duration = Config.Delay,
         label = Translation[Config.Locale]['menu_2'],
-        useWhileDead = false,
-        canCancel = true,
-        disable = {
-            car = true,
-            move = true,
-        },
-        anim = {
-            dict = 'anim@amb@clubhouse@tutorial@bkr_tut_ig3@',
-            clip = 'machinic_loop_mechandplayer'
-        },
-    })
-end)
-
-RegisterNetEvent('giveex')
-AddEventHandler('giveex', function()
-    lib.progressBar({
-        duration = Config.Delay,
-        label = Translation[Config.Locale]['menu_1'],
         useWhileDead = false,
         canCancel = true,
         disable = {
