@@ -4,7 +4,7 @@ lua54 'yes'
 
 name ""
 author "Scube Scripts"
-version "1.0.2"
+version "1.0.3"
 description ""
 
 client_scripts {
