@@ -51,7 +51,7 @@ lib.registerContext({
     options = {
         {
             title = Translation[Config.Locale]['menu_1'],
-            icon = 'fire-extinguisher',
+            icon = 'plus',
             iconColor = '#e06666',
             onSelect = function()
                 TriggerServerEvent('sc:getfire')
@@ -59,7 +59,7 @@ lib.registerContext({
           },
           {
             title = Translation[Config.Locale]['menu_2'],
-            icon = 'fire-extinguisher',
+            icon = 'right-left',
             iconColor = '#e06666',
             onSelect = function()
                 TriggerServerEvent('sc:change')
@@ -67,7 +67,7 @@ lib.registerContext({
           },
           {
             title = Translation[Config.Locale]['remfire'],
-            icon = 'fire-extinguisher',
+            icon = 'minus',
             iconColor = '#e06666',
             onSelect = function()
                 TriggerServerEvent('sc:remove')
@@ -83,7 +83,7 @@ lib.registerContext({
     options = {
       {
         title = Translation[Config.Locale]['menu_1'],
-        icon = 'fire-extinguisher',
+        icon = 'plus',
         iconColor = '#e06666',
         onSelect = function()
             TriggerServerEvent('sc:getfire')
@@ -91,7 +91,7 @@ lib.registerContext({
       },
       {
         title = Translation[Config.Locale]['menu_2'],
-        icon = 'fire-extinguisher',
+        icon = 'right-left',
         iconColor = '#e06666',
         onSelect = function()
             TriggerServerEvent('sc:change')
