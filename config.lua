@@ -51,6 +51,25 @@ Translation = {
         ['remfire1'] = 'You have put away your fire extinguisher',
 
     },
+    ['it'] = {
+        ['error1'] = 'Errore',
+        ['error2'] = 'Hai già un estintore!',
+        ['error3'] = "Non hai un estintore nel tuo inventario!",
+        ['success1'] = 'Successo',
+        ['success2'] = 'Estintore ricevuto!',
+        ['success3'] = 'Il tuo estintore è stato sostituito!',
+        ['inform1'] = 'Info',
+        ['inform2'] = "Non hai un estintore nel tuo inventario!",
+        ['target_1'] = 'Prendere / sostituire estintore',
+        ['menu_header'] = 'Estintori',
+        ['menu_1'] = 'Prendi un estintore',
+        ['menu_2'] = 'Rimpiazzare estintore',
+        ['target_2'] = 'Scomparto attrezzature aperto',
+        ['truk_menu'] = 'Attrezzatura',
+        ['remfire'] = 'Metti via estintore',
+        ['remfire1'] = 'Avete messo via il vostro estintore',
+
+    },
     ['es'] = {
         ['error1'] = 'Error',
         ['error2'] = '¡Ya tienes un extintor de incendios!',
