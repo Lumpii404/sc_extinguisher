@@ -21,28 +21,31 @@ exports.ox_target:addModel("firetruk", {
     icon = 'fas fa-screwdriver-wrench',
     label = Translation[Config.Locale]['target_2'],
     distance = 2.5,
+    serverEvent = 'sc:openfiretruk',
     canInteract = function(entity, distance, coords, name)
       return true
-    end,
-    onSelect = function(data)
-        lib.showContext('fire_truk')
     end
   })
 
 ---
 
-  lib.registerContext({
+RegisterNetEvent('showmenu')
+AddEventHandler('showmenu', function()
+    lib.showContext('fire_truk')
+end)
+
+lib.registerContext({
     id = 'fire_truk',
     title = Translation[Config.Locale]['truk_menu'],
     options = {
-      {
-        title = Translation[Config.Locale]['menu_header'],
-        icon = 'fire-extinguisher',
-        iconColor = '#e06666',
-        menu = 'truk_menu',
-      }
+        {
+            title = Translation[Config.Locale]['menu_header'],
+            icon = 'fire-extinguisher',
+            iconColor = '#e06666',
+            menu = 'truk_menu',
+        }
     }
-})
+})	
 
 lib.registerContext({
     id = 'truk_menu',

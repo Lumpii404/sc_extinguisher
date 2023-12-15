@@ -4,7 +4,7 @@ lua54 'yes'
 
 name ""
 author "Scube Scripts"
-version "1.0.4"
+version "1.0.5"
 description ""
 
 client_scripts {
@@ -22,7 +22,7 @@ shared_script {
 
 dependencies {
   'es_extended',
-  'ox_lib',
+	'ox_lib',
   'oxmysql',
   'ox_inventory'
 }

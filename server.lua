@@ -81,6 +81,29 @@ AddEventHandler('sc:remove', function()
     end
 end)
 
+RegisterServerEvent('sc:openfiretruk')
+AddEventHandler('sc:openfiretruk', function()
+    local _source = source
+    local xPlayer = ESX.GetPlayerFromId(_source)
+    
+    if Config.JobCheck then
+        if xPlayer ~= nil then
+            local xPlayerJob = xPlayer.job.name 
+            if xPlayerJob == Config.FireJob then
+                TriggerClientEvent('showmenu', source)	
+            else
+                TriggerClientEvent('ox_lib:notify', _source, {
+                    title = Translation[Config.Locale]['error1'],
+                    description = Translation[Config.Locale]['error4'],
+                    type = 'error'
+                })
+            end
+        end
+    else
+        TriggerClientEvent('showmenu', source)
+    end
+end)
+
 
 
 
