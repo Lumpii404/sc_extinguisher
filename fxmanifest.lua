@@ -2,7 +2,7 @@ fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
 
-name ""
+name "sc_extinguisher"
 author "Scube Scripts"
 version "1.0.5"
 description ""
@@ -22,7 +22,7 @@ shared_script {
 
 dependencies {
   'es_extended',
-	'ox_lib',
+  'ox_lib',
   'oxmysql',
   'ox_inventory'
 }
