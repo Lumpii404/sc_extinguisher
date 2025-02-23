@@ -1,3 +1,6 @@
+> [!CAUTION]
+> This is an old version which is not up to date, please look here: [ScubeScripts](https://github.com/orgs/ScubeScripts/repositories)
+
 # sc_extinguisher
 
 ![](https://github.com/ScubeScripts/sc_extinguisher/assets/104854776/234565ac-2050-41d1-a7da-ee8dfd148c75)
